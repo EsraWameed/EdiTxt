@@ -24,7 +24,9 @@ console.error('putDb not implemented');
 const store = tx.objectStore('jate');
 //using .add() to store and pass in content
 const request = store.add({ content: content });
-
+// Get confirmation of the request.
+const result = await request;
+console.log('🚀 - data saved to the database', result);
 
 }
 // TODO: Add logic for a method that gets all the content from the database
