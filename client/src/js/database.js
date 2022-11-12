@@ -13,7 +13,7 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (content) => {
+export const putDb = async (id, content) => {
 console.error('putDb not implemented');
 //connection to the db and version we want to use
  // Create a connection to the database database and version we want to use.
@@ -23,7 +23,7 @@ console.error('putDb not implemented');
 //opening the desired object store
 const store = tx.objectStore('jate');
 //using .add() to store and pass in content
-const request = store.add({ content: content });
+const request = store.add({ id: id, text: content });
 // Get confirmation of the request.
 const result = await request;
 console.log('🚀 - data saved to the database', result);

@@ -3,6 +3,7 @@ const butInstall = document.getElementById('buttonInstall');
 // Logic for installing the PWA
 // Added an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
+  event.preventDefault();
        // Stored the triggered events
        window.deferredPrompt = event;
 
@@ -12,6 +13,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async () => {
+  console.log("hello there")
     const promptEvent = window.deferredPrompt;
 
   if (!promptEvent) {
