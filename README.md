@@ -17,5 +17,5 @@ Editxt is a text editor running in the browser. It is a single page application 
 - Concurrently: allows for running multiple scripts simultaneously.
 
 
-![Login Page](client/src/images/1.png "Final Look")
-![Main Page](client/src/images/2.png "Final Look")
+![editor in browser](client/src/images/1.png "Final Look")
+![editor offline](client/src/images/2.png "Final Look")
